@@ -1,7 +1,7 @@
 # qa-practice-lab
 Training repository for QA focused on practical testing skills, automation basics, and real project scenarios.
 
-# QA Intern Training Repository
+# QA Training Repository
 
 ## 📌 Purpose
 This repository is used for training QA.  
@@ -17,14 +17,18 @@ The goal is to learn:
 
 ## 📂 Repository Structure
 
+```text
 qa-intern-training/
 ├── tasks/
-│ ├── intern-name-1/
-│ ├── intern-name-2/
-│ └── intern-name-3/
+│   ├── intern-name-1/
+│   ├── intern-name-2/
+│   └── intern-name-3/
 ├── common/
 ├── docs/
 └── README.md
+```
+
+---
 
 ### Folder description
 - **tasks/** – individual folders for each intern  
