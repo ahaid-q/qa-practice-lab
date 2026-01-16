@@ -76,26 +76,36 @@ Before starting, make sure you have:
 - A code editor (VS Code recommended)
 
 Check installation:
-```bash
+```
 node -v
 git --version
+```
 ▶️ How to Run Tasks
 From the repository root:
-
+```
 node tasks/your-folder-name/task-name.js
+```
 Example:
+```
 node tasks/denis-petrov/task-01.js
+```
 
 📤 Submitting Your Work
 Create a new branch:
+```
 git checkout -b intern/your-name
+```
 
 Commit your changes:
+```
 git add .
 git commit -m "Complete task 01"
+```
 
 Push the branch:
+```
 git push origin intern/your-name
+```
 
 Create a Pull Request to main
 
