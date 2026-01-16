@@ -17,11 +17,11 @@ The goal is to learn:
 
 ## 📂 Repository Structure
 
-qa-training/
+qa-intern-training/
 ├── tasks/
-│ ├── name-1/
-│ ├── name-2/
-│ └── name-3/
+│ ├── intern-name-1/
+│ ├── intern-name-2/
+│ └── intern-name-3/
 ├── common/
 ├── docs/
 └── README.md
