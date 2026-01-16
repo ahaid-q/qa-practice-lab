@@ -4,7 +4,7 @@ Training repository for QA interns focused on practical testing skills, automati
 # QA Intern Training Repository
 
 ## 📌 Purpose
-This repository is used for training QA interns.  
+This repository is used for training QA.  
 You will practice testing skills by completing **JavaScript-based tasks** assigned to you individually.
 
 The goal is to learn:
@@ -17,17 +17,14 @@ The goal is to learn:
 
 ## 📂 Repository Structure
 
-qa-intern-training/
+qa-training/
 ├── tasks/
-│ ├── intern-name-1/
-│ ├── intern-name-2/
-│ └── intern-name-3/
+│ ├── name-1/
+│ ├── name-2/
+│ └── name-3/
 ├── common/
 ├── docs/
 └── README.md
-
-yaml
-Copy code
 
 ### Folder description
 - **tasks/** – individual folders for each intern  
@@ -44,15 +41,12 @@ You will have a folder named after you, for example:
 
 tasks/denis-petrov/
 
-yaml
-Copy code
-
 Inside your folder you may have:
 - `.js` files with tasks
 - Test files
 - Notes or comments related to your tasks
 
-❗ Do NOT modify other interns’ folders.
+❗ Do NOT modify other QAs’ folders.
 
 ---
 
@@ -84,31 +78,21 @@ git --version
 ▶️ How to Run Tasks
 From the repository root:
 
-bash
-Copy code
 node tasks/your-folder-name/task-name.js
 Example:
-
-bash
-Copy code
 node tasks/denis-petrov/task-01.js
+
 📤 Submitting Your Work
 Create a new branch:
-
-bash
-Copy code
 git checkout -b intern/your-name
-Commit your changes:
 
-bash
-Copy code
+Commit your changes:
 git add .
 git commit -m "Complete task 01"
-Push the branch:
 
-bash
-Copy code
+Push the branch:
 git push origin intern/your-name
+
 Create a Pull Request to main
 
 ✅ Rules & Expectations
