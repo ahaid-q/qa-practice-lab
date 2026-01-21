@@ -110,6 +110,7 @@ git push origin intern/your-name
 Create a Pull Request to main
 
 ✅ Rules & Expectations
+
 Write clean and readable code
 
 Use meaningful variable and function names
@@ -121,6 +122,7 @@ Follow task requirements exactly
 Ask questions if something is unclear
 
 🧠 What We Evaluate
+
 Task understanding
 
 Code correctness
