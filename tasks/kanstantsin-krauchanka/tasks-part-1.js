@@ -29,8 +29,9 @@ const myName = "Kostya";
 console.log(myName + "\n" + PI + "\n");
 
 //4
-for (let i = 10; i < 21; i++) {
-    console.log(Boolean(i));
+for (let i = 0; i < 31; i++) {
+    if (i > 9 && i < 21) console.log(true);
+    else console.log(false);
 };
 
 console.log("\n");

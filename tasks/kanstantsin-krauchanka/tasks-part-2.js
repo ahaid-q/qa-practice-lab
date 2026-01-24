@@ -21,8 +21,8 @@ if (age < 18) {
 }
 
 //7
-let x = 3;
-switch(x) {
+let day = 3;
+switch(day) {
     case 1:
         console.log("Понедельник");
         break;
