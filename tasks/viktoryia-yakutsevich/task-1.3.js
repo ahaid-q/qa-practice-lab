@@ -1,5 +1,5 @@
 // Task #3
-const My_Name = "Vika";
-const Home_Number = 18;
+const myName = "Vika";
+const homeNumber = 18;
 
-console.log(My_Name, Home_Number);
+console.log(myName, homeNumber);
