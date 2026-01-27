@@ -1,6 +1,6 @@
 // Ex 3
-const randomNum = Math.random() * 100;
-console.log(Math.floor(randomNum));
+const randomNum = Math.floor(Math.random() * 100) + 1;
+console.log(randomNum);
 
 // Ex 4
 let age = 20;
