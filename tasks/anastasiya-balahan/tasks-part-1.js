@@ -14,10 +14,10 @@ let str = "Hi 5!";
 let bb = true;
 let y = 9 + "1";
 let x = "a" / 6;
-console.log(typeof a);
-console.log(typeof c);
+console.log(typeof aa);
+console.log(typeof cc);
 console.log(typeof str);
-console.log(typeof b);
+console.log(typeof bb);
 console.log(typeof y);
 console.log(typeof x);
 
@@ -30,8 +30,8 @@ console.log(PI);
 console.log(SPEED_OF_LIGHT);
 
 // Ex 4
-for (let i = 10; i <= 20; i++) {
-    if (i % 2 === 0) {
+for (let i = 0; i <= 50; i++) {
+    if (i >= 10 && i <= 20) {
         console.log(i, "true")
     } else {
         console.log(i, "false");
