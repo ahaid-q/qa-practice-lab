@@ -1,55 +1,56 @@
 // Task #1
-/*for (let i = 1; i <= 10; i++) {
+let i;
+for (i = 1; i <= 10; i++) {
   console.log(i);
 }
 
-let i = 1;
+ i = 1;
 
 while (i <= 10) {
   console.log(i);
   i++;
-}*/
+}
 
 //Task #2
 
-/*for (let i = 0; i <= 20; i++) {
+for (let i = 0; i <= 20; i++) {
   if (i % 2 === 0) {
     console.log(i);
-  }
-}*/
+  } 
+}
 
 //Task #3
 
-/*let i = 10;
+ i = 10;
 
 while (i >= 1) {
   console.log(i);
   i--;
-}*/
+}
 
 //Task #4
 
-/*function greet(name) {
+function greet(name) {
   console.log("Hello, " + name);
 }
 
-greet("Vika");*/
+greet("Vika");
 
 //Task #5
 
-/*const square = function (number) {
+const square = function (number) {
   return number * number;
 };
 
-console.log(square(5));*/
+console.log(square(5));
 
 //Task #6
 
-/*const isEven = (number) => number % 2 === 0;
-console.log(isEven(6));*/
+const isEven = (number) => number % 2 === 0;
+console.log(isEven(6));
 
 //Task #7
-/*function generateUsers(n) {
+function generateUsers(n) {
   const users = [];
 
   for (let i = 1; i <= n; i++) {
@@ -61,17 +62,17 @@ console.log(isEven(6));*/
 
   return users;
 }
-console.log(generateUsers(5));*/
+console.log(generateUsers(5));
 
 //Task#8
-/*const numbers = [1, 2, 3, 4, 5, 6];
+const numbers = [1, 2, 3, 4, 5, 6];
 
 const result = numbers.filter(num => num % 2 === 0);
 
-console.log(result);*/
+console.log(result);
 
 //Task#9
-/*const user = {
+const user = {
   name: "Vika",
   email: "a.com",
   isActive: true,
@@ -79,21 +80,21 @@ console.log(result);*/
 
 console.log(user.name);
 console.log(user.email);
-console.log(user.isActive);*/
+console.log(user.isActive);
 
 //Task#10
-/*const user = {
+const user10 = {
   name: "Alice",
   email: "alice@test.com",
   isActive: true,
 };
-user.printInfo = function () {
-  console.log("User: " + this.name + ", email: " + this.email);
+user10.printInfo = function () {
+  console.log("User:" + this.name + ", email: " + this.email);
 };
-user.printInfo();*/
+user10.printInfo();
 
 //Task # 11,12
-/*class TestUser {
+class TestUser {
   constructor(id, role) {
     this.id = id;
     this.role = role;
@@ -111,44 +112,57 @@ const user2 = new TestUser(2, "user");
 console.log(user1);
 console.log(user2);
 console.log(user1.isAdmin()); 
-console.log(user2.isAdmin());*/
+console.log(user2.isAdmin());
 
 //Task #13
-/*const apiResponse = {
+const apiResponse = {
   status: 200,
   data: {},
   isSuccess() {
     return this.status === 200;
   },
 };
-console.log(apiResponse.isSuccess());*/
+console.log(apiResponse.isSuccess());
 
 //Task #14
-/*const numbers = [1, 2, 3, 4, 5];
-console.log(numbers.length);*/
+const numbers14 = [1, 2, 3, 4, 5];
+console.log(numbers14.length);
 
 //Task #15
-/*const array = ["Login", "Logout", "Profile"];
+const array = ["Login", "Logout", "Profile"];
 
 for (let i = 0; i < array.length; i++) {
   console.log(array[i]);
-}*/
+}
 
 //Task #16
-/*const arr = [1, 2, 3, 4];
+const arr16 = [1, 2, 3, 4];
 
-const result = arr.map(num => num * 10);
-console.log(result);*/
+const result16 = arr16.map(num => num * 10);
+console.log(result16);
 
 //Task #17
-/*const arr = [5, 12, 8, 130, 44];
+const arr = [5, 12, 8, 130, 44];
 
-const result = arr.filter(num => num > 10);
-console.log(result);*/
+const result17 = arr.filter(num => num > 10);
+console.log(result17);
 
 //Task #18
-/*const roles = ["user1", "user2", "admin"];
+const roles = ["user1", "user2", "admin"];
 
 const hasManager = roles.includes("manager");
-console.log(hasManager);*/
+console.log(hasManager);
+
+//Task #19
+const responses = [
+  { status: 200 },
+  { status: 404 },
+  { status: 200 },
+];
+
+const success = responses.filter(
+  response => response.status === 200
+);
+console.log(success);
+
 
