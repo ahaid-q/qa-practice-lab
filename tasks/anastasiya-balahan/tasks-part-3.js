@@ -1,93 +1,93 @@
-// // Ex 1
-// for (let i = 1; i <= 10; i++) { 
-//   console.log(i);
-// }
+// Ex 1
+for (let i = 1; i <= 10; i++) { 
+  console.log(i);
+}
 
-// let i = 1;
-// while (i <= 10) { 
-//   console.log(i);
-//   i++;
-// }
+let i = 1;
+while (i <= 10) { 
+  console.log(i);
+  i++;
+}
 
-// // Ex 2
-// for (let i = 1; i <= 20; i++) { 
-//   if (i % 2 === 0) {
-//     console.log(i);
-//   }
-// }
+// Ex 2
+for (let i = 1; i <= 20; i++) { 
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
 
-// // Ex 3
-// let k = 10;
-// while (k >= 1) { 
-//   console.log(k);
-//   k--;
-// }
+// Ex 3
+let k = 10;
+while (k >= 1) { 
+  console.log(k);
+  k--;
+}
 
-// // Ex 4
-// function greet(name) {
-//     return "Hello, " + name;
-// }
-// console.log(greet("Nastya"));
+// Ex 4
+function greet(name) {
+    return "Hello, " + name;
+}
+console.log(greet("Nastya"));
 
-// // Ex 5
-// const square = function(a) {
-//     return a ** 2;
-// }
-// console.log(square(2));
+// Ex 5
+const square = function(a) {
+    return a ** 2;
+}
+console.log(square(2));
 
-// // Ex 6
-// const isEven = (num) => num % 2 === 0;
-// console.log(isEven(31));
+// Ex 6
+const isEven = (num) => num % 2 === 0;
+console.log(isEven(31));
 
-// Ex 7
-// function generateUsers(n) {
-//     let users = [];
-//     for (let i = 1; i <= n; i++) { 
-//         let user = {
-//             id: i,
-//             name: "User" + i,
-//         };
-//         users.push(user);
-// }
-//     return users;
-// }
-// console.log(generateUsers(3));
+//Ex 7
+function generateUsers(n) {
+    let users = [];
+    for (let i = 1; i <= n; i++) { 
+        let user = {
+            id: i,
+            name: "User" + i,
+        };
+        users.push(user);
+}
+    return users;
+}
+console.log(generateUsers(3));
 
-// // Ex 8
-// let numbers = [1,2,3,4,5,6];
-// const isEvenNum = () => numbers.filter(n => n % 2 === 0);
-// console.log(isEvenNum());
+// Ex 8
+let numbers = [1,2,3,4,5,6];
+const isEvenNum = () => numbers.filter(n => n % 2 === 0);
+console.log(isEvenNum());
 
-// // Ex 9
-// const user = {
-//     name: "Nastya",
-//     email: "test@mail.ru",
-//     isActive: true,
-// }
-// for (const [key, value] of Object.entries(user)) {
-//   console.log(`${key}: ${value}`); 
-// }
+// Ex 9
+const user = {
+    name: "Nastya",
+    email: "test@mail.ru",
+    isActive: true,
+}
+for (const [key, value] of Object.entries(user)) {
+  console.log(`${key}: ${value}`); 
+}
 
-// // Ex 10
-// user.printInfo = function () {
-//     return `User: ${this.name}, email: ${this.email}`;
-// }
-// console.log(user.printInfo());
+// Ex 10
+user.printInfo = function () {
+    return `User: ${this.name}, email: ${this.email}`;
+}
+console.log(user.printInfo());
 
-// // Ex 11
-// function TestUser (id, role) {
-//     this.id = id;
-//     this.role = role;
-// }
-// const testUser1 = new TestUser("1", "admin");
-// const testUser2 = new TestUser("2", "user");
+// Ex 11
+function TestUser (id, role) {
+    this.id = id;
+    this.role = role;
+}
+const testUser1 = new TestUser("1", "admin");
+const testUser2 = new TestUser("2", "user");
 
-// // Ex 12
-// TestUser.prototype.isAdmin = function() {
-//     return this.role === "admin";
-// }
-// const testUser3 = new TestUser("3", "user");
-// console.log(testUser1.isAdmin());
+// Ex 12
+TestUser.prototype.isAdmin = function() {
+    return this.role === "admin";
+}
+const testUser3 = new TestUser("3", "user");
+console.log(testUser1.isAdmin());
 
 // Ex 13
 const apiResponse = {
