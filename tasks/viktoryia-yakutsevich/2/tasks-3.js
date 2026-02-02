@@ -1,10 +1,10 @@
 // Task #1
-let i;
-for (i = 1; i <= 10; i++) {
+
+for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
 
- i = 1;
+ let i = 1;
 
 while (i <= 10) {
   console.log(i);
@@ -31,10 +31,11 @@ while (i >= 1) {
 //Task #4
 
 function greet(name) {
-  console.log("Hello, " + name);
+  return "Hello, " + name;
 }
 
-greet("Vika");
+
+console.log(greet("Vika"));
 
 //Task #5
 
@@ -78,9 +79,9 @@ const user = {
   isActive: true,
 };
 
-console.log(user.name);
-console.log(user.email);
-console.log(user.isActive);
+for (const key in user) {
+ console.log(user[key]);
+}
 
 //Task#10
 const user10 = {
@@ -131,8 +132,8 @@ console.log(numbers14.length);
 //Task #15
 const array = ["Login", "Logout", "Profile"];
 
-for (let i = 0; i < array.length; i++) {
-  console.log(array[i]);
+for (const item of array) {
+  console.log(item);
 }
 
 //Task #16
@@ -148,7 +149,7 @@ const result17 = arr.filter(num => num > 10);
 console.log(result17);
 
 //Task #18
-const roles = ["user1", "user2", "admin"];
+const roles = ["user1", "user2", "admin", "manager"];
 
 const hasManager = roles.includes("manager");
 console.log(hasManager);
