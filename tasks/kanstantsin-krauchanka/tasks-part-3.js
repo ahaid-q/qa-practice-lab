@@ -1,9 +1,9 @@
 //1
-for (let i = 0; i < 11; i++) {
+for (let i = 1; i < 11; i++) {
   console.log(i);
 }
 
-let i = 0;
+let i = 1;
 while (i < 11) {
   console.log(i);
   i++;
@@ -44,8 +44,8 @@ function generateUsers(n) {
   let arr = [];
   for (let i = 0; i < n; i++) {
     let user = {
-      id: i,
-      name: "User" + i,
+      id: i + 1,
+      name: "User" + (i + 1),
     }
     arr.push(user);
   }
@@ -70,7 +70,7 @@ let user = {
 }
 
 for (let key in user) {
-  console.log(key);
+  console.log(user[key]);
 }
 
 //10
@@ -85,9 +85,7 @@ function TestUser(id, role) {
     
   //12
   this.isAdmin = function() {
-    if (this.role == "admin") {
-      return true;
-    }
+    return this.role === "admin";
   }
 }
 
@@ -100,9 +98,7 @@ let apiResponse = {
   data: "2026-01-28",
 
   isSuccess() {
-    if (this.status === 200) {
-      return true;
-    }
+    return this.status === 200;
   }
 }
 
@@ -137,9 +133,4 @@ const responses = [
   {status: 200},
 ]
 
-let responsesOK = [];
-for(response of responses) {
-  if (response.status === 200) {
-    responsesOK.push(response);
-  }
-}
+let responsesOK = responses.filter(r => r.status === 200);
