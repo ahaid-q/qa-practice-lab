@@ -65,7 +65,7 @@ class User {
     console.log("This is a User class");
   }
 
-  //16
+  //15
   #validateAge(age) {
     return age > 0;
   }
@@ -89,7 +89,7 @@ class Employee extends User {
   }
 }
 
-//9 + 15
+//9
 class Account { //class Account т.к. User уже занято
   #password;
   constructor(name, password) {
@@ -141,7 +141,7 @@ class LoginPage extends BasePage {
   //
 }
 
-//17
+//16
 class UserWithRole {
   _role = "user";
 }
@@ -152,7 +152,7 @@ class AdminRoleChanger extends UserWithRole {
   }
 }
 
-//20
+//19
 try {
   console.log("Попытка");
   throw new Error("Ошибка!");
@@ -162,7 +162,7 @@ try {
   console.log("Завершение блока");
 }
 
-//21
+//20
 function div(a,b) {
   if (b === 0) {
     throw new Error("Деление на 0");
@@ -176,8 +176,7 @@ try {
   console.log(e.message);
 }
 
-//22
-
+//21
 function getElement(selector) {
   let el = null;
   return el;
