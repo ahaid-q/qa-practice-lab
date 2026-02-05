@@ -177,11 +177,18 @@ try {
 }
 
 //22
+
+function getElement(selector) {
+  let el = null;
+  return el;
+}
+
 try {
-  //начало теста
-  //поиск DOM элемента по селектору
+  if (!getElement("button[type='submit']")) {
+    throw new Error("Element not found");
+  }
 } catch (err) {
-  //обработка ошибки
+  console.log(err);
 } finally {
-  //продолжение теста
+  console.log("Продолжение теста");
 }
