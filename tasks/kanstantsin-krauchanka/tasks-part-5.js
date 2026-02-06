@@ -187,7 +187,7 @@ try {
     throw new Error("Element not found");
   }
 } catch (err) {
-  console.log(err);
+  console.log(err.message);
 } finally {
   console.log("Продолжение теста");
 }
