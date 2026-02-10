@@ -42,7 +42,15 @@ let person = {
 
 //5
 let apiResponse = {
-  data: "some data",
+  data: {
+    "success": true,
+    "message": "User with ID 1 found.",
+    "data": {
+      "userId": "1",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com"
+    }
+},
 
   get jsonString() {
     return JSON.stringify(this.data);
@@ -105,7 +113,7 @@ class Account { //class Account т.к. User уже занято
 //10
 class Admin extends User {
   deleteUser(userName) {
-    //
+    return `User ${userName} was removed.`
   }
 }
 
@@ -132,8 +140,8 @@ class Counter {
 
 //14
 class BasePage {
-  static open() {
-    //
+  static open(url) {
+    console.log(`Opening page ${url}`);
   }
 }
 

@@ -2,7 +2,7 @@
 class NotFoundError extends Error {
   constructor(message) {
     super(message);
-    this.name = "ValidationError";
+    this.name = "NotFoundError";
   }
 }
 
@@ -11,6 +11,8 @@ function getUser(id) {
   let userId = 67;
   if (id !== userId) {
     throw new NotFoundError("Пользователь не найден");
+  } else {
+    return userId;
   }
 }
 
@@ -47,7 +49,11 @@ asyncFunction();
 
 //6
 async function f() {
-  throw new Error("Error");
+  try {
+    throw new Error("Error");
+  } catch(e) {
+    console.log(e.message);
+  }
 }
 
 //8
@@ -68,26 +74,19 @@ function vacation(month) {
 }
 
 //11
-function getTicketPrice(age) {
-  let ticketPrice = 100;
-  if (age <= 2) {
-    return 0;
-  } else if (age <= 10) {
-    return ticketPrice / 2;
-  } else if (age >= 18 && age <= 22) { //студенты
-    return ticketPrice * 0.9;
-  } else if (age >= 65) {
-    return ticketPrice * 0.85;
-  } else {
-    return ticketPrice;
-  }
+function getTicketPrice(age, price, isStudent = false) {
+  if (price <= 2) return 0;
+  if (age <= 10) return price / 2;
+  if (age >= 65) return price * 0.85;
+  if (isStudent === true) return price * 0.9;
+  return price;
 }
 
 //12
 let arr = [[1,2],[3,4,5],[6,7,8],9,[10],[0,11],"Hello"];
 
 function arrSum(array) {
-  let newArr = array.flat()
+  let newArr = array.flat(Infinity)
                     .filter((number) => typeof(number) == "number");
 
   let sum = 0;
@@ -185,6 +184,9 @@ class Employee {
 //18
 class Human {
   constructor(name, age, hobby) {
+    if (new.target === Human) {
+      throw new Error("Abstract class");
+    }
     this.name = name;
     this.age = age;
     this.hobby = hobby;
@@ -195,8 +197,9 @@ class Human {
   }
 }
 
-let human1 = new Human("Катя", 23, "reading");
-let human2 = new Human("Юра", 24, "hiking");
+class People extends Human {};
+let human1 = new People("Катя", 23, "reading");
+let human2 = new People("Юра", 24, "hiking");
 
 console.log(human1.info());
 console.log(human2.info());
@@ -223,6 +226,11 @@ class Admin extends User {
   isAdmin = true;
 
   deleteUser(userToDelete) {
-    console.log(`Пользователь ${userToDelete} был удален.`);
+    return `Пользователь ${userToDelete} был удален.`;
   }
 }
+
+let testUser = new User("user","1234");
+let testAdmin = new Admin("admin", "admin");
+let result19 = [testUser, testAdmin];
+console.log(result19);
