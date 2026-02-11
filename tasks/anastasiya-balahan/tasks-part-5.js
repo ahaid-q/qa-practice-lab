@@ -19,7 +19,7 @@ const product2 = {
         this.price = this.price * (1 - percent / 100);
     },
 };
-product.discount = 20;
+product2.discount = 20;
 console.log(product2.price);
 
 // Ex 3 
@@ -128,11 +128,7 @@ class Admin extends User {
         super(name, age);
     }
     deleteUser(userName) {
-        if (userName === this.name) {
-            console.log("User is deleted");
-        } else {
-            console.log("User not found");
-        }
+        console.log(`User ${userName} deleted.`);
     }
 }
 const admin1 = new Admin("Joe", 32);
@@ -215,7 +211,7 @@ try {
   console.log("Попытка");
   throw new Error("Ошибка!");
 } catch (error) {
-  console.log("Поймали ошибку", error.massage);
+  console.log("Поймали ошибку", error.message);
 } finally {
   console.log("Завершение блока");
 }
