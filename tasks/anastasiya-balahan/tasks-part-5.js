@@ -195,10 +195,18 @@ profile1.setAge(-1);
 // Ex 16
 class UserRole {
     _role = "user";
+
+    setRole (role) {
+        this._role = role;
+    }
 }
 
 class Admin extends UserRole {
-    _role = "admin";
+    constructor() {
+        super();
+        this.setRole("admin");
+    }
+    
 }
 
 const userRoleTest = new UserRole();
